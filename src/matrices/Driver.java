@@ -13,7 +13,10 @@ public class Driver {
         Matriz m2 = new Matriz(3, 4, true);
         System.out.println(m2);
         try {
+            // Suma de matrices
             System.out.println(Matriz.sumarDosMatrices(m1, m2));
+            //Transpuesta de matriz
+            System.out.println(Matriz.trasponerMatriz(m1));                    
         } catch (DimensionesIncompatibles ex) {
             Logger.getLogger(Driver.class.getName()).log(Level.SEVERE, null, ex);
         }

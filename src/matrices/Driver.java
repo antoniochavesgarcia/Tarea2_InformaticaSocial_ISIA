@@ -12,11 +12,15 @@ public class Driver {
         System.out.println(m1);
         Matriz m2 = new Matriz(3, 4, true);
         System.out.println(m2);
+        Matriz m3 = new Matriz(6, 3, true);
+        System.out.println(m3);
         try {
             // Suma de matrices
             System.out.println(Matriz.sumarDosMatrices(m1, m2));
             //Transpuesta de matriz
             System.out.println(Matriz.trasponerMatriz(m1));                    
+            // Multiplicación de matrices
+            System.out.println(Matriz.multiplicarDosMatrices(m1, m3));        
         } catch (DimensionesIncompatibles ex) {
             Logger.getLogger(Driver.class.getName()).log(Level.SEVERE, null, ex);
         }
